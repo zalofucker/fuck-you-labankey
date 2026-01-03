@@ -1,5 +1,4 @@
 # fuck-you-labankey
-# fuck-you-zalo
 # **🛡️ LabanKey  Blocker**
 #**HIỆN TẠI CHUNG TÔI CẦN HỖ TRỢ XÂY DỰNG README TRONG VIỆC CÁCH SETUP BLOCKLIST!?!?!?!**
 
