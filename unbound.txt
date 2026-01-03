@@ -1,0 +1,7 @@
+# Title: fuck-you-labankey (unbounddns)
+# Homepage: https://github.com/zalofucker/fuck-you-labankey
+# ..............
+
+local-zone: "laban.vn" always_null
+local-zone: "dl.dict.laban.vn" always_null
+local-zone: "stc-laban.zdn.vn" always_null
