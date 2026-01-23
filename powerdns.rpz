@@ -3,5 +3,8 @@
 # ..............
 
 *.stc-laban.zdn.vn CNAME .
+stc-laban.zdn.vn CNAME .
 *.laban.vn CNAME .
+laban.vn CNAME .
 *.dl.dict.laban.vn CNAME .
+dl.dict.laban.vn CNAME .
