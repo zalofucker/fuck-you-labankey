@@ -30,7 +30,7 @@ Vào mục Filters (Bộ lọc) -> DNS Blocklists.
 
 Chọn Add Blocklist -> Add a custom list.
 
-Dán [URL](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adblocker.txt) sau
+Dán [URL từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adblocker.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/adblocker.txt) sau
 
 Đặt tên (ví dụ: labankey-fucker) và nhấn Save.
 
@@ -40,7 +40,7 @@ Dán [URL](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/h
 
 2. Vào mục Group Management -> Adlists.
 
-3. Dán [URL](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/host.txt) vào ô Address.
+3. Dán [URL từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/host.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/host.txt) vào ô Address.
 
 Nhấn Add.
 
@@ -52,11 +52,11 @@ Mở Dashboard của uBlock Origin.
 
 Tab Filter lists -> Kéo xuống dưới cùng chọn Import.
 
-Dán [URL](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adblocker.txt) danh sách vào và nhấn Apply changes.
+Dán [URL từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adblocker.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/adblocker.txt) danh sách vào và nhấn Apply changes.
 
 ## 4. File Hosts (Windows)
 
-Tải file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/windows.txt) về máy.
+Tải file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/windows.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/windows.txt) về máy.
 
 Mở file hosts trên máy tính của bạn:
 
@@ -68,7 +68,7 @@ Truy cập vào (sử dụng nano,vim để chỉnh sửa)
  ```/etc/hosts```
 
 
-Copy nội dung trong [file sau](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adaway.txt) và dán vào cuối file hosts.
+Copy nội dung trong [file này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adaway.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/adaway.txt) và dán vào cuối file hosts.
 
 Lưu lại (có thể cần quyền Admin/Sudo).
 
@@ -86,7 +86,7 @@ Tạo và mở file (ví dụ đặt tên là labankeyblocklist.conf) (có thể
 ```sudo nano /etc/unbound/labankeyblocklist.conf```
 
 Bước 2: Dán nội dung vào file
-Copy toàn bộ danh sách ở file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/unbound.txt) sau đó lưu lại file
+Copy toàn bộ danh sách ở file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/unbound.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/unbound.txt) sau đó lưu lại file
 
 Bước 3: Cấu hình Unbound để nhận file này
 Mở file cấu hình chính (thường nằm ở /etc/unbound/unbound.conf):
@@ -126,7 +126,7 @@ Nếu bạn đang dùng router OPNsense hoặc pfSense chạy Unbound:
 
 3. Tìm ô Custom Options (Tùy chọn tùy chỉnh).
 
-4. Dán trực tiếp danh sách [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/unbound.txt) vào đó
+4. Dán trực tiếp danh sách [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/unbound.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/unbound.txt) vào đó
 
 5. Nhấn Save và Apply Changes.
 
@@ -145,7 +145,7 @@ $TTL 60
 @            IN    NS    localhost.
 
 ```
-Bước 2: dán danh sách domain [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz) vào trong file 
+Bước 2: dán danh sách domain [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/powerdns.rpz) vào trong file 
 
 Bước 3: Khai báo trong `named.conf.options`
 Mở file cấu hình chính (thường là `/etc/bind/named.conf.options` hoặc `/etc/named.conf`). Thêm đoạn sau vào trong khối `options { ... };`
@@ -165,7 +165,7 @@ Bước 5: Tải lại dữ liệu
 
 `sudo systemctl reload bind9` hoặc `sudo rndc reload`
 ### 6.2 Knot
-Bước 1: Tải file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz)
+Bước 1: Tải file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/powerdns.rpz)
 
 Bước 2: Chuyển vào `/etc/knot-resolver/powerdns.rpz`
 
@@ -180,7 +180,7 @@ policy.add(policy.rpz(policy.DENY, '/etc/knot-resolver/powerdns.rpz'))
 Bước 4: Khởi động lại
 ```sudo systemctl restart knot-resolver```
 ### 6.3 PowerDNS
-Bước 1: Tải file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz)
+Bước 1: Tải file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/powerdns.rpz) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/powerdns.rpz)
 
 Bước 2: Chuyển vào `/etc/knot-resolver/powerdns.rpz`
 Bước 3: Tạo file `/etc/powerdns/recursor.lua` với nội dung:
@@ -199,14 +199,14 @@ Bước 5: khởi động lại
 
 ```sudo systemctl restart pdns-recursor```
 ## 7.Adaway
-Bước 1: Tải hoặc thêm trực tiếp bộ lọc [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adaway.txt)
+Bước 1: Tải hoặc thêm trực tiếp bộ lọc [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/adaway.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/adaway.txt)
 
 Bước 2: Bấm vào nút cập nhật 
 
 Bước 3: Chờ một lúc và tắt đi bật lại
 
 ## 8.DNSCloak
-Bước 1: Tải file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/host.txt)
+Bước 1: Tải file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/host.txt) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/host.txt)
 
 Bước 2: Mở ứng dụng DNSCloak.
 
@@ -222,7 +222,7 @@ Bước 6: Cửa sổ chọn file hiện ra, bạn tìm đến file blacklist.tx
 
 Bước 7: Về lại màn hình chính và nhấn nút Play (hình tam giác) ở đầu tên máy chủ để bắt đầu VPN.
 ## 9.dnsmasq
-Bước 1: Tải về file cấu hình [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/dnsmasq.conf)
+Bước 1: Tải về file cấu hình [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/dnsmasq.conf) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/dnsmasq.conf)
 
 Bước 2: Tạo một file cấu hình mới trong thư mục cấu hình của dnsmasq (VD:labankeyfucker)
 
@@ -255,7 +255,7 @@ Bước 5: Nhấn Save và Apply Settings.
 
 ## 10. RouterOS
 
-Bước 1: Lưu file [này](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/mikrotik.rsc)
+Bước 1: Lưu file [này từ GitHub](https://raw.githubusercontent.com/zalofucker/fuck-you-labankey/refs/heads/main/mikrotik.rsc) hoặc [này từ Forgejo](https://codefloe.com/Zalofucker/fuck-you-labankey/raw/branch/main/mikrotik.rsc)
 
 Bước 2: Mở New Terminal.
 
